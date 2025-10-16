@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business autonome</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Plateforme de business en ligne autonome</h1>
+      <p>
+        Suivi complet des ventes, automatisations marketing, paiements Mobile Money et
+        projets auto-évolutifs.
+      </p>
+    </header>
+
+    <main>
+      <section class="grid dashboard">
+        <article class="card">
+          <h2>Statistiques clés</h2>
+          <div class="metrics" id="metrics">
+            <div class="metric"><span>0</span><small>Commandes</small></div>
+            <div class="metric"><span>0</span><small>Revenus (FCFA)</small></div>
+            <div class="metric"><span>0</span><small>Produits</small></div>
+            <div class="metric"><span>0</span><small>Clients</small></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Produits les plus performants</h2>
+          <ul id="top-products" class="list"></ul>
+        </article>
+
+        <article class="card">
+          <h2>Campagnes marketing récentes</h2>
+          <ul id="campaigns" class="list"></ul>
+        </article>
+
+        <article class="card">
+          <h2>Projets auto-générés</h2>
+          <ul id="projects" class="list"></ul>
+        </article>
+      </section>
+
+      <section class="grid forms">
+        <article class="card">
+          <h2>Ajouter un produit</h2>
+          <form id="product-form" class="form">
+            <label>Nom<input type="text" name="name" required /></label>
+            <label>Description<textarea name="description"></textarea></label>
+            <label>Prix (FCFA)<input type="number" name="price" min="0" required /></label>
+            <label>Méthode de livraison
+              <select name="delivery_method">
+                <option value="email">Email</option>
+                <option value="download">Lien de téléchargement</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </label>
+            <button type="submit">Créer</button>
+          </form>
+        </article>
+
+        <article class="card">
+          <h2>Enregistrer un paiement</h2>
+          <form id="payment-form" class="form">
+            <label>Client<select name="customer_id" required></select></label>
+            <label>Montant (FCFA)<input type="number" name="amount" min="0" required /></label>
+            <label>Fournisseur
+              <select name="provider" required>
+                <option value="orange-money">Orange Money</option>
+                <option value="mtn-momo">MTN Mobile Money</option>
+                <option value="wave">Wave</option>
+                <option value="free-money">Free Money</option>
+                <option value="paydunya">PayDunya</option>
+              </select>
+            </label>
+            <label>Statut
+              <select name="status">
+                <option value="pending">En attente</option>
+                <option value="confirmed">Confirmé</option>
+              </select>
+            </label>
+            <button type="submit">Valider</button>
+          </form>
+        </article>
+
+        <article class="card">
+          <h2>Créer un client</h2>
+          <form id="customer-form" class="form">
+            <label>Nom<input type="text" name="name" required /></label>
+            <label>Email<input type="email" name="email" /></label>
+            <label>Téléphone<input type="tel" name="phone" /></label>
+            <button type="submit">Ajouter</button>
+          </form>
+        </article>
+
+        <article class="card">
+          <h2>Automatisation</h2>
+          <p>
+            Lancement manuel des optimisations : génération d'une campagne sociale et d'un
+            mini-projet autour du meilleur produit en cours.
+          </p>
+          <button id="automation-btn">Exécuter Auto-Run</button>
+          <pre id="automation-log"></pre>
+        </article>
+      </section>
+
+      <section class="grid tables">
+        <article class="card">
+          <h2>Commandes</h2>
+          <table id="orders-table">
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Produit</th>
+                <th>Quantité</th>
+                <th>Statut</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </article>
+
+        <article class="card">
+          <h2>Paiements</h2>
+          <table id="payments-table">
+            <thead>
+              <tr>
+                <th>Client</th>
+                <th>Montant</th>
+                <th>Fournisseur</th>
+                <th>Statut</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Rapports hebdomadaires automatisés, marketing multicanal et déploiement de micro-sites
+        gérés depuis un seul tableau de bord.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
