@@ -1,0 +1,49 @@
+Crée un service logistique urbain 100 % automatisé, écologique et auto-évolutif.
+L’objectif est d’orchestrer une flotte de véhicules électriques autonomes pour assurer la livraison du dernier kilomètre sans intervention humaine, sauf pour surveiller les indicateurs clés ou ajuster les paramètres stratégiques.
+
+🔹 Objectif général
+
+Construis une plateforme web complète (front + back + automatisations) capable de :
+•Planifier, optimiser et exécuter automatiquement les tournées de livraison via une flotte mixte de vélos cargos, scooters et utilitaires électriques autonomes.
+•Gérer la réservation de créneaux, la tarification dynamique, la facturation, l’assistance client et la communication sans intervention manuelle.
+•S’adapter et évoluer automatiquement : analyser les performances de livraison, identifier les zones à forte demande et déployer des micro-hubs logistiques temporaires en conséquence.
+•Détecter, diagnostiquer et corriger automatiquement les anomalies opérationnelles pour maintenir un service fiable.
+
+🔹 Paiements
+•Intègre les paiements via Stripe, PayPal, et si possible les réseaux locaux de paiement instantané (SEPA Instant, Pix, etc.).
+•Utilise les API officielles ou gratuites, avec webhooks pour la confirmation automatique des paiements.
+•Génère automatiquement des factures et reçus après validation.
+•Agrège les revenus et dépenses dans un tableau de bord financier.
+•Permet d’ajouter ou de modifier facilement les comptes marchands et paramètres fiscaux.
+
+🔹 Automatisation logistique & marketing
+•Le système orchestre automatiquement la répartition des colis, la gestion de flotte (maintenance prédictive, recharge, stationnement) et la conformité réglementaire.
+•Diffuse des campagnes marketing multicanales (LinkedIn, Twitter, newsletters B2B, SMS) en générant des contenus ciblés pour les commerçants et e-commerçants.
+•Analyse les performances marketing et d’acquisition, puis ajuste continuellement les messages, offres et canaux privilégiés.
+
+🔹 Livraison et service
+•Pour chaque mission, informe automatiquement le client final du suivi en temps réel, de l’ETA et des étapes clés (collecte, en route, livraison).
+•Gère le service après-vente via un chatbot et des workflows d’escalade automatique vers des techniciens humains uniquement si nécessaire.
+•Déclenche des notifications par email/SMS/push à chaque étape critique pour le commerçant expéditeur et le destinataire.
+
+🔹 Back-office / Gestion
+•Fournis un tableau de bord complet : indicateurs de ponctualité, taux de remplissage, émissions économisées, incidents, satisfaction client, bénéfices.
+•Ajoute un mode “Auto-Run” : le système continue à planifier, optimiser et étendre automatiquement les opérations sans supervision.
+•Implémente un moteur d’auto-correction : journalisation intelligente, redéploiement automatique ou reconfiguration de microservices en cas d’erreur détectée.
+
+🔹 Évolution automatique
+•Intègre un moteur d’analyse urbaine : croise données publiques (trafic, événements, météo) et données internes pour anticiper la demande et repositionner la flotte.
+•Crée et déploie automatiquement de nouvelles zones de desserte ou mini-centres logistiques modulaires, avec leurs pages de présentation dédiées.
+•Centralise la gestion des villes, hubs et indicateurs dans un seul tableau de bord global.
+
+🔹 Contraintes
+•Aucun coût initial élevé : privilégier les services cloud à niveau gratuit (Railway, Supabase, Netlify, etc.) et les solutions open source.
+•Interface intuitive, responsive, adaptée aux opérateurs mobiles.
+•Code propre, documenté, modulaire et extensible.
+
+🔹 Résultat attendu
+•Un écosystème logistique urbain automatisé, auto-évolutif, utilisant une flotte électrique autonome et acceptant plusieurs moyens de paiement digitaux.
+•Une plateforme opérationnelle immédiatement, capable de gérer et promouvoir les services de livraison sans intervention humaine.
+•Un rapport hebdomadaire automatique envoyé par email : volumes livrés, satisfaction, nouvelles zones ouvertes, gains environnementaux.
+
+⚙ Le système doit fonctionner de manière totalement autonome, sans intervention manuelle autre que la consultation des performances ou l’ajustement de paramètres stratégiques.
